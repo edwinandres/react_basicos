@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Componente from '../src/components/Componente'
 
 function App() {
   return (
@@ -18,6 +19,10 @@ function App() {
           Learn React
         </a>
       </header>
+      <section>
+        <Componente msg="Hola, soy un componente con props"/>
+
+      </section>
     </div>
   );
 }
