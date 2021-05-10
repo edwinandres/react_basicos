@@ -1,6 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 import Componente from '../src/components/Componente'
+import Propiedades from '../src/components/Propiedades'
+import Estado from './components/Estado';
+import RenderizadoCondicional from './components/RenderizadoCondicional'
 
 function App() {
   return (
@@ -18,11 +21,28 @@ function App() {
         >
           Learn React
         </a>
-      </header>
-      <section>
-        <Componente msg="Hola, soy un componente con props"/>
+      
+        <section>
+          <Componente msg="Hola, soy un componente con props"/>
+          <Propiedades
+            cadena="soy una cadena"
+            numero = {6}
+            booleano = {true}
+            arreglo={[1,2,3]}
+            objeto = {{nombre:'Edwin', apellido:'Roman'}}
+            funcion = {(num)=> num *num}
+            elementoReact={<i>Esto es un elemento react</i>}
+            componente={<Componente msg="holiss"/>}
 
-      </section>
+
+          />
+          <hr></hr>
+          <Estado/>
+          <hr></hr>
+          <RenderizadoCondicional/>
+
+        </section>
+      </header>
     </div>
   );
 }
