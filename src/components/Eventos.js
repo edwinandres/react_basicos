@@ -1,22 +1,19 @@
 import React, { Component } from 'react';
 
 export class EventosES7 extends Component {
-    constructor(props) {
-        super(props);
-        this.state = { 
-            contador:0
-        }
-        this.sumar = this.sumar.bind(this)
-        this.restar = this.restar.bind(this)
+   //desaparece el constructor
+    state={
+       contador:0
     }
 
-    sumar(){
+    //las funciones quedan con arrow function
+    sumar = (e) => {
         this.setState({
             contador : this.state.contador+1
         })
     }
 
-    restar(){
+    restar = (e) => {
         this.setState({
             contador : this.state.contador-1
         })
