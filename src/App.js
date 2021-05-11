@@ -5,7 +5,7 @@ import Propiedades from '../src/components/Propiedades'
 import Estado from './components/Estado';
 import RenderizadoCondicional from './components/RenderizadoCondicional'
 import RenderizadoElementos from './components/RenderizadoElementos';
-import  {EventosES6, EventosES7} from './components/Eventos';
+import  {EventosES6, EventosES7, MasSobreEventos} from './components/Eventos';
 
 
 function App() {
@@ -48,6 +48,8 @@ function App() {
           <EventosES6/>
           <hr></hr>
           <EventosES7/>
+          <hr></hr>
+          <MasSobreEventos/>
 
         </section>
       </header>

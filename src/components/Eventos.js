@@ -69,4 +69,32 @@ export class EventosES6 extends Component {
          );
     }
 }
+
+function Boton (props){
+    return(
+        <button onClick={props.myOnClick}>Boton componente</button>
+    )
+}
+
+export class MasSobreEventos extends Component{
+
+    handleClick = (e, mensaje) =>{
+        console.log(e)
+        console.log(e.nativeEvent)
+        console.log(e.target)
+        console.log(mensaje)
+    }
+
+    render(){
+        return(
+            <div>
+                <h2>Mas sobre eventos</h2>
+                <button onClick={e => this.handleClick(e,"mensaje de ensayo")}>Saludar</button>
+                <Boton
+                    myOnClick={e => this.handleClick(e,"mensaje de ensayo")}
+                />
+            </div>
+        )
+    }
+}
  

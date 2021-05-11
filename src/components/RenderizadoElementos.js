@@ -4,7 +4,7 @@ import data from '../helpers/data.json'
 function ListItem(props){
     return(
         <li>
-            <a href={props.web} target="_blank">{props.name}</a>
+            <a href={props.web} target="_blank" rel="noreferrer">{props.name}</a>
         </li>
     )
 }
