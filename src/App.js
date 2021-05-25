@@ -7,6 +7,13 @@ import RenderizadoCondicional from './components/RenderizadoCondicional'
 import RenderizadoElementos from './components/RenderizadoElementos';
 import  {EventosES6, EventosES7, MasSobreEventos} from './components/Eventos';
 import ComunicacionComponentes from './components/ComunicacionComponentes'
+import CicloVida from './components/CicloVida';
+import AjaxApis from './components/AjaxApis';
+import ContadorHooks from './components/ContadorHooks';
+import ScrollHooks from './components/ScrollHooks';
+import RelojHooks from './components/RelojHooks';
+import AjaxHooks from './components/AjaxHooks';
+import HooksPersonales from './components/HooksPersonales';
 
 function App() {
   return (
@@ -26,6 +33,19 @@ function App() {
         </a>
       
         <section>
+          <HooksPersonales />
+          <hr></hr>
+          <AjaxHooks />
+          <hr></hr>
+          <RelojHooks />
+          <hr></hr>
+
+          <ScrollHooks titulo="seguidores"/>
+          <hr></hr>
+
+          <ContadorHooks titulo="seguidores"/>
+          <hr></hr>
+          <hr></hr>
           <Componente msg="Hola, soy un componente con props"/>
           <Propiedades
             cadena="soy una cadena"
@@ -52,6 +72,11 @@ function App() {
           <MasSobreEventos/>
           <hr></hr>
           <ComunicacionComponentes/>
+          <hr></hr>
+          <CicloVida/>
+          <hr></hr>
+          <AjaxApis/>
+
 
         </section>
       </header>
