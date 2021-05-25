@@ -14,6 +14,7 @@ import ScrollHooks from './components/ScrollHooks';
 import RelojHooks from './components/RelojHooks';
 import AjaxHooks from './components/AjaxHooks';
 import HooksPersonales from './components/HooksPersonales';
+import Referencias from './components/Referencias';
 
 function App() {
   return (
@@ -33,6 +34,8 @@ function App() {
         </a>
       
         <section>
+          <Referencias />
+          <hr></hr>
           <HooksPersonales />
           <hr></hr>
           <AjaxHooks />
